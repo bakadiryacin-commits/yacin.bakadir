@@ -29,18 +29,31 @@
   </header>
 
   <main id="top">
-    <section class="home-hero motion-block" aria-labelledby="home-title">
+    <section class="home-hero centered-hero motion-block" aria-labelledby="home-title">
       <div class="home-hero-bg" aria-hidden="true"></div>
+      <div class="floating-symbols" aria-hidden="true">
+        <span class="float-pill pill-a">SEO</span>
+        <span class="float-pill pill-b">Outbound</span>
+        <span class="float-pill pill-c">Apps Script</span>
+        <span class="float-orb orb-a">↗</span>
+        <span class="float-orb orb-b">◎</span>
+        <span class="float-orb orb-c">✦</span>
+      </div>
       <div class="hero-intro">
         <div class="signup-chip">Finissant en marketing digital <strong>ouvert aux opportunités</strong></div>
-        <h1 id="home-title">BAKADIR Yacin, profil marketing digital orienté acquisition et automatisation.</h1>
-        <p class="hero-copy">Je cherche un emploi, une alternance ou des clients pour construire des systèmes marketing concrets: prospection outbound, enrichissement de données, contenus SEO, branding, ads et e-commerce.</p>
+        <h1 id="home-title">Marketing digital, acquisition B2B & automatisation.</h1>
+        <p class="hero-copy">J'aide à transformer une idée marketing en système clair: cible, message, data, contenu et conversion.</p>
         <div class="hero-actions">
-          <a class="pill primary" href="contact.html">Prendre rendez-vous</a>
-          <a class="pill play" href="use-cases.html"><span aria-hidden="true">→</span> Voir les use cases</a>
+          <a class="pill primary" href="use-cases.html">Voir mes use cases</a>
+          <a class="pill play" href="contact.html"><span aria-hidden="true">→</span> Me contacter</a>
         </div>
       </div>
-      <aside class="portrait-card" aria-label="Portrait de Yacin Bakadir">
+      <aside class="portrait-card hero-visual-card" aria-label="Portrait de Yacin Bakadir">
+        <div class="visual-overlays" aria-hidden="true">
+          <span>CRM</span>
+          <span>Ads</span>
+          <span>Data</span>
+        </div>
         <div class="portrait-media">
           <img src="assets/squarespace-yacin.png" alt="Ancien portfolio de Yacin Bakadir, à remplacer par un portrait professionnel">
         </div>
@@ -59,18 +72,21 @@
       </div>
       <div class="feature-list">
         <a class="feature-card" href="case-outbound-nettoyage.html">
+          <div class="card-icon" aria-hidden="true">◎</div>
           <span>01</span>
           <h3>Acquisition B2B</h3>
           <p>Identifier les bons comptes, créer des angles de prospection et suivre les opportunités avec méthode.</p>
           <strong>Voir le cas <span aria-hidden="true">→</span></strong>
         </a>
         <a class="feature-card" href="case-data-enrichment.html">
+          <div class="card-icon" aria-hidden="true">▦</div>
           <span>02</span>
           <h3>Automatisation & data</h3>
           <p>Nettoyer, enrichir et exploiter des bases de données avec Google Sheets, Apps Script et workflows simples.</p>
           <strong>Voir le cas <span aria-hidden="true">→</span></strong>
         </a>
         <a class="feature-card" href="case-seo-automation.html">
+          <div class="card-icon" aria-hidden="true">✦</div>
           <span>03</span>
           <h3>Contenu & SEO</h3>
           <p>Structurer des contenus utiles, répétables et publiables pour soutenir une stratégie d'acquisition durable.</p>
@@ -110,22 +126,28 @@
       </div>
       <div class="case-preview-grid">
         <a class="case-preview-card large" href="case-outbound-nettoyage.html">
+          <div class="case-art outbound-art" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </div>
           <span>Acquisition</span>
           <h3>Prospection outbound automatisée pour une entreprise de nettoyage.</h3>
           <p>Ciblage, enrichissement, séquences de prospection, suivi des réponses et apprentissages terrain.</p>
           <strong>Ouvrir l'étude <span aria-hidden="true">→</span></strong>
         </a>
         <a class="case-preview-card" href="case-data-enrichment.html">
+          <div class="mini-art data-art" aria-hidden="true"></div>
           <span>Data ops</span>
           <h3>Enrichissement de données avec Apps Script.</h3>
           <strong>Voir plus <span aria-hidden="true">→</span></strong>
         </a>
         <a class="case-preview-card" href="case-seo-automation.html">
+          <div class="mini-art seo-art" aria-hidden="true"></div>
           <span>SEO</span>
           <h3>Outil de rédaction et publication automatisée.</h3>
           <strong>Voir plus <span aria-hidden="true">→</span></strong>
         </a>
         <a class="case-preview-card" href="case-effet-home.html">
+          <div class="mini-art brand-art" aria-hidden="true"></div>
           <span>Brand & ads</span>
           <h3>Création de la marque e-commerce Effet Home.</h3>
           <strong>Voir plus <span aria-hidden="true">→</span></strong>
@@ -140,16 +162,19 @@
       </div>
       <div class="blog-preview-list">
         <a href="blog.html">
+          <i class="post-mark" aria-hidden="true"></i>
           <span>Personal branding</span>
           <h3>Transformer un profil étudiant en proposition de valeur.</h3>
           <strong>Lire <span aria-hidden="true">→</span></strong>
         </a>
         <a href="blog.html">
+          <i class="post-mark" aria-hidden="true"></i>
           <span>Acquisition B2B</span>
           <h3>Les signaux à regarder avant de lancer une campagne.</h3>
           <strong>Lire <span aria-hidden="true">→</span></strong>
         </a>
         <a href="blog.html">
+          <i class="post-mark" aria-hidden="true"></i>
           <span>Portfolio</span>
           <h3>Montrer son potentiel sans surcharger son parcours.</h3>
           <strong>Lire <span aria-hidden="true">→</span></strong>
@@ -216,6 +241,11 @@
     </section>
 
     <section class="home-cta motion-block">
+      <div class="cta-symbols" aria-hidden="true">
+        <span>✦</span>
+        <span>↗</span>
+        <span>◎</span>
+      </div>
       <h2>Besoin d'un profil qui sait produire, tester et apprendre vite ?</h2>
       <p>Envoyez-moi un message. Je vous réponds avec une proposition claire: ce que je peux apporter, comment je peux aider et par où commencer.</p>
       <a class="pill primary" href="contact.html">Collaborer avec Yacin</a>
