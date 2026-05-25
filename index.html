@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Yacin Bakadir, profil junior en marketing digital orienté contenu, acquisition B2B, automatisation et mise en valeur de l'expertise professionnelle.">
-  <title>Yacin Bakadir - Marketing, contenu & automatisation</title>
+  <meta name="description" content="Portfolio de Yacin Bakadir, profil junior en marketing digital orienté acquisition B2B, automatisation, contenu et exécution terrain.">
+  <title>Yacin Bakadir - Marketing digital, acquisition B2B & automatisation</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,27 +45,184 @@
     }
 
     @keyframes logoScroll {
-      from {
-        transform: translateX(0);
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .home-page .portfolio-hero {
+      position: relative;
+      min-height: 780px;
+      padding: 118px 22px 0;
+      overflow: hidden;
+      isolation: isolate;
+      color: #fff;
+      background: #02040a;
+      display: grid;
+      align-items: start;
+      justify-items: center;
+      text-align: center;
+    }
+
+    .home-page .portfolio-hero .home-hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background:
+        radial-gradient(circle at 50% 58%, rgba(18, 147, 255, 0.72), transparent 28%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.92), rgba(1, 5, 16, 0.72) 34%, rgba(22, 92, 255, 0.82) 73%, rgba(0, 0, 0, 0.92)),
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.22) 0 1px, rgba(255,255,255,0.03) 1px 16px, rgba(0,0,0,0.46) 16px 29px);
+    }
+
+    .home-page .portfolio-hero .home-hero-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.78));
+      pointer-events: none;
+    }
+
+    .home-page .portfolio-hero .hero-intro {
+      position: relative;
+      z-index: 3;
+      max-width: 920px;
+      display: grid;
+      justify-items: center;
+      gap: 22px;
+    }
+
+    .home-page .portfolio-hero .signup-chip {
+      color: rgba(255,255,255,0.78);
+      border-color: rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.09);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+    }
+
+    .home-page .portfolio-hero h1 {
+      max-width: 920px;
+      margin: 0;
+      font-size: clamp(44px, 8vw, 104px);
+      line-height: 0.92;
+      letter-spacing: 0;
+    }
+
+    .home-page .portfolio-hero .hero-copy {
+      max-width: 680px;
+      margin: 0;
+      color: rgba(255,255,255,0.76);
+      font-size: clamp(17px, 2vw, 22px);
+      line-height: 1.55;
+    }
+
+    .home-page .portfolio-hero .hero-actions {
+      justify-content: center;
+    }
+
+    .home-page .portfolio-hero .portrait-card {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      bottom: -46px;
+      width: min(620px, 84vw);
+      transform: translateX(-50%);
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      background: transparent;
+      padding: 0;
+    }
+
+    .home-page .portfolio-hero .portrait-media {
+      min-height: clamp(360px, 48vw, 590px);
+      background: transparent;
+      overflow: visible;
+    }
+
+    .home-page .portfolio-hero .portrait-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center bottom;
+      filter: drop-shadow(0 36px 64px rgba(0,0,0,0.62));
+    }
+
+    .home-page .portfolio-hero .portrait-caption {
+      display: none;
+    }
+
+    .home-page .portfolio-hero .visual-overlays,
+    .home-page .portfolio-hero .floating-symbols {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .home-page .portfolio-hero .visual-overlays span,
+    .home-page .portfolio-hero .float-pill {
+      position: absolute;
+      min-width: 156px;
+      padding: 18px 26px;
+      border-radius: 12px;
+      color: rgba(255,255,255,0.7);
+      border: 1px solid rgba(255,255,255,0.45);
+      background: linear-gradient(135deg, rgba(255,255,255,0.28), rgba(255,255,255,0.06));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.75), 0 14px 40px rgba(0,0,0,0.28);
+      backdrop-filter: blur(16px);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .home-page .portfolio-hero .visual-overlays span:nth-child(1) { left: 16%; top: 36%; animation: floatSoft 7s ease-in-out infinite; }
+    .home-page .portfolio-hero .visual-overlays span:nth-child(2) { right: 17%; top: 36%; animation: floatSoft 7.5s ease-in-out infinite reverse; }
+    .home-page .portfolio-hero .visual-overlays span:nth-child(3) { right: 11%; top: 52%; animation: floatSoft 6.8s ease-in-out infinite; }
+    .home-page .portfolio-hero .pill-a { left: 9%; top: 51%; animation: floatSoft 8s ease-in-out infinite reverse; }
+    .home-page .portfolio-hero .pill-b { left: 18%; top: 67%; animation: floatSoft 7.2s ease-in-out infinite; }
+    .home-page .portfolio-hero .pill-c { right: 10%; top: 67%; animation: floatSoft 8.4s ease-in-out infinite; }
+    .home-page .portfolio-hero .float-orb { display: none; }
+
+    @keyframes floatSoft {
+      0%, 100% { transform: translate3d(0, 0, 0); }
+      50% { transform: translate3d(0, -14px, 0); }
+    }
+
+    @media (max-width: 900px) {
+      .home-page .portfolio-hero {
+        min-height: 760px;
+        padding-top: 92px;
       }
-      to {
-        transform: translateX(-50%);
+
+      .home-page .portfolio-hero .visual-overlays span,
+      .home-page .portfolio-hero .float-pill {
+        min-width: auto;
+        padding: 13px 18px;
+        font-size: 11px;
       }
+
+      .home-page .portfolio-hero .visual-overlays span:nth-child(1) { left: 5%; top: 49%; }
+      .home-page .portfolio-hero .visual-overlays span:nth-child(2) { right: 5%; top: 49%; }
+      .home-page .portfolio-hero .visual-overlays span:nth-child(3) { display: none; }
+      .home-page .portfolio-hero .pill-a { left: 8%; top: 63%; }
+      .home-page .portfolio-hero .pill-b { display: none; }
+      .home-page .portfolio-hero .pill-c { right: 8%; top: 63%; }
     }
 
     @media (max-width: 768px) {
-      .top-logo-strip {
-        padding: 14px 0;
+      .top-logo-strip { padding: 14px 0; }
+      .top-logo-track { gap: 36px; animation-duration: 22s; }
+      .top-logo-track img { height: 30px; max-width: 120px; }
+
+      .home-page .portfolio-hero {
+        min-height: 720px;
+        padding-inline: 18px;
       }
 
-      .top-logo-track {
-        gap: 36px;
-        animation-duration: 22s;
+      .home-page .portfolio-hero h1 {
+        font-size: clamp(40px, 13vw, 64px);
       }
 
-      .top-logo-track img {
-        height: 30px;
-        max-width: 120px;
+      .home-page .portfolio-hero .portrait-card {
+        width: min(560px, 104vw);
       }
     }
   </style>
@@ -101,7 +258,6 @@
       <img src="assets/logo-carrelage-bakadir.png" alt="Carrelage Bakadir">
       <img src="assets/logo-lcdc.png" alt="LCDC">
       <img src="assets/logo-optima.png" alt="Optima Toulon">
-
       <img src="assets/logo-acceo.png" alt="Acceo">
       <img src="assets/logo-fatec.png" alt="FATEC">
       <img src="assets/logo-eco-impact.png" alt="Éco Impact">
@@ -114,26 +270,22 @@
   </section>
 
   <main id="top">
-    <section class="home-hero centered-hero motion-block" aria-labelledby="home-title">
+    <section class="home-hero centered-hero motion-block portfolio-hero" aria-labelledby="home-title">
       <div class="home-hero-bg" aria-hidden="true"></div>
 
       <div class="floating-symbols" aria-hidden="true">
-        <span class="float-pill pill-a">Contenu</span>
-        <span class="float-pill pill-b">Outbound</span>
-        <span class="float-pill pill-c">Automatisation</span>
-        <span class="float-orb orb-a">↗</span>
-        <span class="float-orb orb-b">◎</span>
-        <span class="float-orb orb-c">✦</span>
+        <span class="float-pill pill-a">Outbound</span>
+        <span class="float-pill pill-b">Data</span>
+        <span class="float-pill pill-c">SEO</span>
       </div>
 
       <div class="hero-intro">
         <div class="signup-chip">Junior en marketing digital <strong>orienté terrain</strong></div>
 
-        <h1 id="home-title">Mettre en valeur l’expertise des professionnels grâce au marketing, au contenu et aux systèmes.</h1>
+        <h1 id="home-title">Marketing digital, acquisition B2B & automatisation.</h1>
 
         <p class="hero-copy">
-          J’aide à transformer des idées, des savoir-faire ou des problématiques métier en contenus clairs,
-          systèmes d’acquisition et workflows simples à utiliser.
+          J’aime transformer des idées marketing en systèmes concrets : prospection, contenu, workflows et automatisations.
         </p>
 
         <div class="hero-actions">
@@ -144,51 +296,51 @@
 
       <aside class="portrait-card hero-visual-card" aria-label="Portrait de Yacin Bakadir">
         <div class="visual-overlays" aria-hidden="true">
-          <span>CRM</span>
-          <span>SEO</span>
-          <span>Data</span>
+          <span>Automation</span>
+          <span>Contenu</span>
+          <span>Workflows</span>
         </div>
 
         <div class="portrait-media">
-          <img src="assets/squarespace-yacin.png" alt="Ancien portfolio de Yacin Bakadir, à remplacer par un portrait professionnel">
+          <img src="assets/squarespace-yacin.png" alt="Portrait ou aperçu de l'univers visuel de Yacin Bakadir">
         </div>
 
         <div class="portrait-caption">
           <span>Disponibilité</span>
           <strong>Marketing digital</strong>
-          <p>Contenu, acquisition, automatisation et mise en valeur de l’expertise professionnelle.</p>
+          <p>Acquisition, contenu, automatisation et apprentissage rapide.</p>
         </div>
       </aside>
     </section>
 
     <section class="home-section features-section motion-block" aria-labelledby="features-title">
       <div class="home-section-heading">
-        <span>Ce que je travaille</span>
-        <h2 id="features-title">Les problèmes marketing et opérationnels que j’aime résoudre.</h2>
+        <span>Services</span>
+        <h2 id="features-title">Trois leviers que j’aime explorer pour rendre le marketing plus efficace.</h2>
       </div>
 
       <div class="feature-list">
         <a class="feature-card" href="case-outbound-nettoyage.html">
           <div class="card-icon" aria-hidden="true">◎</div>
           <span>01</span>
-          <h3>Créer plus de conversations qualifiées</h3>
-          <p>Structurer des systèmes de prospection simples, mesurables et adaptés à une cible précise.</p>
+          <h3>Acquisition B2B</h3>
+          <p>Créer des conversations qualifiées grâce à des systèmes de prospection simples, testables et mesurables.</p>
           <strong>Voir le cas <span aria-hidden="true">→</span></strong>
         </a>
 
         <a class="feature-card" href="case-data-enrichment.html">
           <div class="card-icon" aria-hidden="true">▦</div>
           <span>02</span>
-          <h3>Réduire les tâches répétitives</h3>
-          <p>Créer des workflows pour gagner du temps, organiser les données et fluidifier les opérations marketing.</p>
+          <h3>Automatisation & data</h3>
+          <p>Automatiser les tâches répétitives pour gagner du temps et mieux structurer les opérations marketing.</p>
           <strong>Voir le cas <span aria-hidden="true">→</span></strong>
         </a>
 
         <a class="feature-card" href="case-seo-automation.html">
           <div class="card-icon" aria-hidden="true">✦</div>
           <span>03</span>
-          <h3>Transformer une expertise en contenu visible</h3>
-          <p>Mettre en forme les idées d’un professionnel pour les rendre plus claires, utiles et attractives.</p>
+          <h3>Contenu & SEO</h3>
+          <p>Produire du contenu utile, clair et pensé pour construire une visibilité durable.</p>
           <strong>Voir le cas <span aria-hidden="true">→</span></strong>
         </a>
       </div>
@@ -197,26 +349,26 @@
     <section class="home-section advantages-section motion-block" aria-labelledby="advantages-title">
       <div class="home-section-heading compact-heading">
         <span>Positionnement</span>
-        <h2 id="advantages-title">Pourquoi je construis autant de projets.</h2>
+        <h2 id="advantages-title">Pourquoi je construis tous ces projets.</h2>
       </div>
 
       <div class="advantage-grid">
         <article>
-          <span>Clarté</span>
-          <h3>J’aime rendre les idées plus faciles à comprendre.</h3>
-          <p>Un bon contenu ne sert pas juste à publier. Il aide une personne à mieux expliquer ce qu’elle sait faire.</p>
+          <span>Authenticité</span>
+          <h3>Je ne cherche pas à vendre une image d’expert.</h3>
+          <p>Ce qui m’intéresse, c’est comprendre les problèmes, construire des systèmes utiles et améliorer les résultats progressivement.</p>
         </article>
 
         <article>
           <span>Exécution</span>
-          <h3>Je préfère construire plutôt que rester dans la théorie.</h3>
-          <p>Chaque projet est une occasion de tester, produire, mesurer et améliorer progressivement.</p>
+          <h3>J’aime produire, tester et apprendre vite.</h3>
+          <p>Chaque projet est une occasion de passer de l’idée au concret, puis d’observer ce qui fonctionne vraiment.</p>
         </article>
 
         <article>
           <span>Progression</span>
           <h3>Je suis junior, mais déjà dans le concret.</h3>
-          <p>Je ne cherche pas à vendre une image d’expert. Je montre ce que je construis, ce que j’apprends et comment je progresse.</p>
+          <p>Je documente ce que je construis, ce que j’apprends et comment j’améliore mes systèmes au fil des projets.</p>
         </article>
       </div>
     </section>
@@ -224,8 +376,8 @@
     <section class="home-section case-preview-section motion-block" aria-labelledby="cases-title">
       <div class="home-section-heading">
         <span>Études de cas</span>
-        <h2 id="cases-title">Des projets pour tester des idées en conditions réelles.</h2>
-        <p>Chaque projet me permet de travailler une compétence précise : contenu, acquisition, automatisation, données ou stratégie marketing.</p>
+        <h2 id="cases-title">Des projets concrets pour apprendre, tester et progresser.</h2>
+        <p>Chaque projet me permet de travailler une compétence précise : acquisition, automatisation, contenu, données ou tunnel marketing.</p>
       </div>
 
       <div class="case-preview-grid">
@@ -234,29 +386,29 @@
             <i></i><i></i><i></i><i></i>
           </div>
           <span>Acquisition</span>
-          <h3>Construire un système outbound pour comprendre ce qui génère vraiment des réponses.</h3>
-          <p>Ciblage, enrichissement, séquences de prospection, suivi des réponses et amélioration progressive du message.</p>
+          <h3>Prospection outbound automatisée pour une entreprise de nettoyage.</h3>
+          <p>Ciblage, enrichissement, séquences de prospection, suivi des réponses et apprentissages terrain.</p>
           <strong>Ouvrir l’étude <span aria-hidden="true">→</span></strong>
         </a>
 
         <a class="case-preview-card" href="case-data-enrichment.html">
           <div class="mini-art data-art" aria-hidden="true"></div>
           <span>Data ops</span>
-          <h3>Automatiser l’enrichissement de données avec Apps Script.</h3>
+          <h3>Enrichissement de données avec Apps Script.</h3>
           <strong>Voir plus <span aria-hidden="true">→</span></strong>
         </a>
 
         <a class="case-preview-card" href="case-seo-automation.html">
           <div class="mini-art seo-art" aria-hidden="true"></div>
           <span>Contenu & SEO</span>
-          <h3>Créer un outil pour produire et organiser du contenu plus vite.</h3>
+          <h3>Outil de rédaction et publication automatisée.</h3>
           <strong>Voir plus <span aria-hidden="true">→</span></strong>
         </a>
 
         <a class="case-preview-card" href="case-effet-home.html">
           <div class="mini-art brand-art" aria-hidden="true"></div>
           <span>Brand & e-commerce</span>
-          <h3>Créer une marque e-commerce et construire ses premiers contenus.</h3>
+          <h3>Création de la marque e-commerce Effet Home.</h3>
           <strong>Voir plus <span aria-hidden="true">→</span></strong>
         </a>
       </div>
@@ -285,8 +437,8 @@
 
         <a href="blog.html">
           <i class="post-mark" aria-hidden="true"></i>
-          <span>Contenu</span>
-          <h3>Comment rendre visible l’expertise d’un professionnel.</h3>
+          <span>Portfolio</span>
+          <h3>Montrer son potentiel sans surcharger son parcours.</h3>
           <strong>Lire <span aria-hidden="true">→</span></strong>
         </a>
       </div>
@@ -309,7 +461,6 @@
           <span>Carrelage Bakadir</span>
           <span>LCDC</span>
           <span>Optima Toulon</span>
-
           <span>Effet Home</span>
           <span>FATEC</span>
           <span>Eco Impact</span>
@@ -369,7 +520,7 @@
         <span>◎</span>
       </div>
 
-      <h2>Besoin d’un profil capable de produire, tester et mettre en valeur une expertise ?</h2>
+      <h2>Besoin d’un profil capable de produire, tester et s’adapter rapidement ?</h2>
       <p>Je cherche des projets où je peux apporter de l’exécution, de la curiosité et une vraie envie de progresser.</p>
       <a class="pill primary" href="contact.html">Discuter d’un projet</a>
     </section>
