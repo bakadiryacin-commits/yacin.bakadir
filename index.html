@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Yacin Bakadir, profil marketing digital specialise en acquisition B2B.">
-  <title>Yacin Bakadir - Acquisition B2B</title>
+  <meta name="description" content="Portfolio de Yacin Bakadir, profil marketing digital specialise en acquisition B2B, automatisation et creation de marque.">
+  <title>Yacin Bakadir - Marketing digital & acquisition B2B</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="home-page">
   <header class="topbar">
-    <a class="logo" href="index.html" aria-label="Retour en haut">BY<br>YB</a>
+    <a class="logo" href="index.html" aria-label="Accueil">BY<br>YB</a>
     <nav aria-label="Navigation principale">
       <a href="index.html">Accueil</a>
       <a href="portfolio.html">Portfolio</a>
@@ -20,211 +20,214 @@
       <a href="blog.html">Blog</a>
       <a href="cv.html">CV</a>
     </nav>
-    <a class="pill ghost" href="contact.html">Contact</a>
+    <div class="nav-actions">
+      <button class="theme-toggle" type="button" aria-label="Changer le thème" data-theme-toggle>
+        <span class="theme-toggle-track"><span class="theme-toggle-dot"></span></span>
+      </button>
+      <a class="pill ghost" href="contact.html">Contact</a>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <img class="hero-glow" src="https://www.figma.com/api/mcp/asset/0d3a708d-bca5-49e8-9d37-d5e9a99804d5" alt="">
-      <div class="signup-chip">En recherche <strong>d'alternance</strong></div>
-      <h1>Yacin Bakadir. Marketing digital, acquisition B2B, automatisation.</h1>
-      <p class="hero-copy">Je cherche une alternance où je peux devenir utile vite: trouver les bons prospects, structurer les messages, automatiser les tâches répétitives et transformer une idée marketing en système qui tourne.</p>
-      <div class="hero-actions">
-        <a class="pill primary" href="portfolio.html">Voir mon portfolio</a>
-        <a class="pill play" href="use-cases.html"><span aria-hidden="true">▶</span> Use cases</a>
+    <section class="home-hero motion-block" aria-labelledby="home-title">
+      <div class="home-hero-bg" aria-hidden="true"></div>
+      <div class="hero-intro">
+        <div class="signup-chip">Finissant en marketing digital <strong>ouvert aux opportunités</strong></div>
+        <h1 id="home-title">BAKADIR Yacin, profil marketing digital orienté acquisition et automatisation.</h1>
+        <p class="hero-copy">Je cherche un emploi, une alternance ou des clients pour construire des systèmes marketing concrets: prospection outbound, enrichissement de données, contenus SEO, branding, ads et e-commerce.</p>
+        <div class="hero-actions">
+          <a class="pill primary" href="contact.html">Prendre rendez-vous</a>
+          <a class="pill play" href="use-cases.html"><span aria-hidden="true">→</span> Voir les use cases</a>
+        </div>
       </div>
-      <div class="hero-device" aria-label="Aperçu portfolio">
-        <img src="assets/squarespace-yacin.png" alt="Capture de l'ancien portfolio Squarespace de Yacin Bakadir">
-        <div class="screen-card">
-          <span>Positionnement</span>
-          <strong>B2B</strong>
-          <small>acquisition, contenu, prospection et conversion</small>
+      <aside class="portrait-card" aria-label="Portrait de Yacin Bakadir">
+        <div class="portrait-media">
+          <img src="assets/squarespace-yacin.png" alt="Ancien portfolio de Yacin Bakadir, à remplacer par un portrait professionnel">
+        </div>
+        <div class="portrait-caption">
+          <span>Disponibilité</span>
+          <strong>Marketing digital</strong>
+          <p>Acquisition B2B, automatisation, contenu et croissance opérationnelle.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="home-section features-section motion-block" aria-labelledby="features-title">
+      <div class="home-section-heading">
+        <span>Services</span>
+        <h2 id="features-title">Trois façons de rendre une équipe marketing plus efficace.</h2>
+      </div>
+      <div class="feature-list">
+        <a class="feature-card" href="case-outbound-nettoyage.html">
+          <span>01</span>
+          <h3>Acquisition B2B</h3>
+          <p>Identifier les bons comptes, créer des angles de prospection et suivre les opportunités avec méthode.</p>
+          <strong>Voir le cas <span aria-hidden="true">→</span></strong>
+        </a>
+        <a class="feature-card" href="case-data-enrichment.html">
+          <span>02</span>
+          <h3>Automatisation & data</h3>
+          <p>Nettoyer, enrichir et exploiter des bases de données avec Google Sheets, Apps Script et workflows simples.</p>
+          <strong>Voir le cas <span aria-hidden="true">→</span></strong>
+        </a>
+        <a class="feature-card" href="case-seo-automation.html">
+          <span>03</span>
+          <h3>Contenu & SEO</h3>
+          <p>Structurer des contenus utiles, répétables et publiables pour soutenir une stratégie d'acquisition durable.</p>
+          <strong>Voir le cas <span aria-hidden="true">→</span></strong>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-section advantages-section motion-block" aria-labelledby="advantages-title">
+      <div class="home-section-heading compact-heading">
+        <span>Avantages</span>
+        <h2 id="advantages-title">Pourquoi travailler avec moi.</h2>
+      </div>
+      <div class="advantage-grid">
+        <article>
+          <span>Expertise utile</span>
+          <h3>Je relie marketing et exécution.</h3>
+          <p>Je ne m'arrête pas à l'idée. Je cherche la cible, je structure les données, j'écris le message et je prépare le suivi.</p>
+        </article>
+        <article>
+          <span>Créativité business</span>
+          <h3>Je crée avec un objectif.</h3>
+          <p>Branding, contenu ou ads: le design doit servir une lecture claire, une action simple et une progression mesurable.</p>
+        </article>
+        <article>
+          <span>Adaptabilité</span>
+          <h3>J'apprends vite sur le terrain.</h3>
+          <p>PME, services, e-commerce, associations ou B2B local: je sais m'approprier un contexte et documenter ce que je fais.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-section case-preview-section motion-block" aria-labelledby="cases-title">
+      <div class="home-section-heading">
+        <span>Études de cas</span>
+        <h2 id="cases-title">Des projets détaillés, prêts à accueillir tes images et résultats.</h2>
+      </div>
+      <div class="case-preview-grid">
+        <a class="case-preview-card large" href="case-outbound-nettoyage.html">
+          <span>Acquisition</span>
+          <h3>Prospection outbound automatisée pour une entreprise de nettoyage.</h3>
+          <p>Ciblage, enrichissement, séquences de prospection, suivi des réponses et apprentissages terrain.</p>
+          <strong>Ouvrir l'étude <span aria-hidden="true">→</span></strong>
+        </a>
+        <a class="case-preview-card" href="case-data-enrichment.html">
+          <span>Data ops</span>
+          <h3>Enrichissement de données avec Apps Script.</h3>
+          <strong>Voir plus <span aria-hidden="true">→</span></strong>
+        </a>
+        <a class="case-preview-card" href="case-seo-automation.html">
+          <span>SEO</span>
+          <h3>Outil de rédaction et publication automatisée.</h3>
+          <strong>Voir plus <span aria-hidden="true">→</span></strong>
+        </a>
+        <a class="case-preview-card" href="case-effet-home.html">
+          <span>Brand & ads</span>
+          <h3>Création de la marque e-commerce Effet Home.</h3>
+          <strong>Voir plus <span aria-hidden="true">→</span></strong>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-section blog-preview-section motion-block" aria-labelledby="blog-title">
+      <div class="home-section-heading">
+        <span>Blog</span>
+        <h2 id="blog-title">Des notes courtes pour montrer ma façon de penser.</h2>
+      </div>
+      <div class="blog-preview-list">
+        <a href="blog.html">
+          <span>Personal branding</span>
+          <h3>Transformer un profil étudiant en proposition de valeur.</h3>
+          <strong>Lire <span aria-hidden="true">→</span></strong>
+        </a>
+        <a href="blog.html">
+          <span>Acquisition B2B</span>
+          <h3>Les signaux à regarder avant de lancer une campagne.</h3>
+          <strong>Lire <span aria-hidden="true">→</span></strong>
+        </a>
+        <a href="blog.html">
+          <span>Portfolio</span>
+          <h3>Montrer son potentiel sans surcharger son parcours.</h3>
+          <strong>Lire <span aria-hidden="true">→</span></strong>
+        </a>
+      </div>
+    </section>
+
+    <section class="client-logo-section" aria-label="Clients et partenaires">
+      <div class="home-section-heading logo-heading">
+        <span>Références</span>
+        <h2>Entreprises, projets et environnements croisés.</h2>
+      </div>
+      <div class="logo-marquee">
+        <div class="marquee-rail">
+          <span>Effet Home</span>
+          <span>FATEC</span>
+          <span>Eco Impact</span>
+          <span>Acceo</span>
+          <span>Face Var</span>
+          <span>SOS Propreté</span>
+          <span>Effet Home</span>
+          <span>FATEC</span>
+          <span>Eco Impact</span>
+          <span>Acceo</span>
+          <span>Face Var</span>
+          <span>SOS Propreté</span>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section intro motion-block">
-      <div class="intro-copy">
-        <h2>Ce que je sais apporter dès maintenant.</h2>
-        <p>Je ne me présente pas comme un expert fini. Je me présente comme un profil qui sait chercher, produire, documenter et apprendre vite sur des sujets business concrets.</p>
+    <section class="home-section testimonials-section motion-block" aria-labelledby="testimonials-title">
+      <div class="home-section-heading compact-heading">
+        <span>Témoignages</span>
+        <h2 id="testimonials-title">Des retours à compléter au fil des collaborations.</h2>
       </div>
-      <div class="proof">
+      <div class="testimonial-grid">
         <article>
-          <span>01</span>
-          <strong>Prospection outbound</strong>
-          <p>Identifier des comptes, enrichir les données, préparer des angles et suivre les réponses.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <strong>Automatisation marketing</strong>
-          <p>Relier Sheets, Apps Script, contenus et workflows pour gagner du temps sans perdre le contrôle.</p>
+          <p>“Yacin sait transformer une consigne floue en livrable structuré. Il pose les bonnes questions et avance vite.”</p>
+          <span>Collaborateur projet</span>
         </article>
         <article>
-          <span>03</span>
-          <strong>Branding et contenu</strong>
-          <p>Construire une marque, écrire une offre claire, poser une présence e-commerce ou SEO.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="logo-marquee" aria-label="Entreprises et projets">
-      <div class="marquee-rail">
-        <span>Effet Home</span>
-        <span>FATEC</span>
-        <span>Eco Impact</span>
-        <span>Acceo</span>
-        <span>Face Var</span>
-        <span>SOS Propreté</span>
-        <span>Effet Home</span>
-        <span>FATEC</span>
-        <span>Eco Impact</span>
-        <span>Acceo</span>
-        <span>Face Var</span>
-        <span>SOS Propreté</span>
-      </div>
-    </section>
-
-    <section class="section skill-router motion-block">
-      <div class="section-title">
-        <span>Compétences clés</span>
-        <h2>Cliquer une compétence ouvre un use case complet.</h2>
-      </div>
-      <div class="skill-grid">
-        <a class="skill-card" href="case-outbound-nettoyage.html">
-          <span>01</span>
-          <h3>Prospection outbound automatisée</h3>
-          <p>Pour une entreprise de nettoyage: ciblage, enrichissement, séquences et suivi des réponses.</p>
-        </a>
-        <a class="skill-card" href="case-data-enrichment.html">
-          <span>02</span>
-          <h3>Enrichissement de données avec Apps Script</h3>
-          <p>Passer d'un fichier brut à une base exploitable pour la prospection et le reporting.</p>
-        </a>
-        <a class="skill-card" href="case-seo-automation.html">
-          <span>03</span>
-          <h3>Outil de rédaction et publication SEO</h3>
-          <p>Structurer la production d'articles, préparer les briefs et automatiser la publication.</p>
-        </a>
-        <a class="skill-card" href="case-effet-home.html">
-          <span>04</span>
-          <h3>Création de marque e-commerce</h3>
-          <p>Effet Home: branding, offre, direction visuelle, ads et logique de conversion.</p>
-        </a>
-      </div>
-    </section>
-
-    <section id="portfolio" class="section portfolio">
-      <div class="section-title">
-        <span>Portfolio</span>
-        <h2>Projets sélectionnés</h2>
-      </div>
-      <div class="work-grid">
-        <article class="work-card tall">
-          <img src="https://www.figma.com/api/mcp/asset/8f17d3be-8303-4898-9cff-bde4a6b8713f" alt="">
-          <div>
-            <span>Portfolio personnel</span>
-            <h3>By Yacin</h3>
-            <p>Refonte de l'ancien Squarespace vers une présence plus nette, moderne et orientée recrutement.</p>
-          </div>
-        </article>
-        <article class="work-card">
-          <img src="https://www.figma.com/api/mcp/asset/0eaee5ef-8f48-4f9a-99bb-c290acab38d2" alt="">
-          <div>
-            <span>Projet agence</span>
-            <h3>Le Bleu Lait</h3>
-            <p>Présentation d'agence et direction visuelle pour valoriser une offre créative.</p>
-          </div>
-        </article>
-        <article class="work-card dark">
-          <img src="https://www.figma.com/api/mcp/asset/ad688b01-0eb7-4a1e-842f-3a0d1eddeedf" alt="">
-          <div>
-            <span>Cas business</span>
-            <h3>Effet Home</h3>
-            <p>Analyse de visibilité, structure d'offre et pistes d'amélioration de présence digitale.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="cases" class="section light motion-block">
-      <div class="case-heading">
-        <h2>Use cases</h2>
-        <p>Des pages complètes, pensées pour évoluer: tu pourras ajouter images, captures, résultats, outils et apprentissages au fur et à mesure.</p>
-      </div>
-      <div class="steps case-links">
-        <a href="case-outbound-nettoyage.html">
-          <span>01</span>
-          <h3>Outbound nettoyage</h3>
-          <p>Construire un système de prospection B2B pour générer des opportunités commerciales.</p>
-        </a>
-        <a href="case-data-enrichment.html">
-          <span>02</span>
-          <h3>Data enrichment</h3>
-          <p>Nettoyer, compléter et rendre actionnable une base de prospects avec Apps Script.</p>
-        </a>
-        <a href="case-seo-automation.html">
-          <span>03</span>
-          <h3>SEO automation</h3>
-          <p>Créer un outil pour rédiger, structurer et publier des contenus SEO plus vite.</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="section metrics">
-      <div>
-        <strong data-count="34">0</strong>
-        <span>ressources projets</span>
-      </div>
-      <div>
-        <strong data-count="12">0</strong>
-        <span>domaines étudiés</span>
-      </div>
-      <div>
-        <strong data-count="98">0</strong>
-        <span>objectif d'exigence</span>
-      </div>
-    </section>
-
-    <section id="blog" class="section blog">
-      <div class="section-title">
-        <span>Blog</span>
-        <h2>Notes marketing</h2>
-      </div>
-      <div class="posts">
-        <article>
-          <span>Personal branding</span>
-          <h3>Comment transformer un profil étudiant en proposition de valeur.</h3>
-          <a href="blog.html">Lire</a>
+          <p>“Son vrai point fort: comprendre l'objectif business avant de produire. C'est rare et précieux.”</p>
+          <span>Encadrant / mentor</span>
         </article>
         <article>
-          <span>Growth</span>
-          <h3>Acquisition B2B: les signaux à regarder avant de lancer une campagne.</h3>
-          <a href="blog.html">Lire</a>
-        </article>
-        <article>
-          <span>Design</span>
-          <h3>Portfolio: montrer son potentiel sans surcharger son parcours.</h3>
-          <a href="blog.html">Lire</a>
+          <p>“Un profil curieux, fiable, capable d'apprendre un outil et d'en faire quelque chose d'exploitable.”</p>
+          <span>Partenaire opérationnel</span>
         </article>
       </div>
     </section>
 
-    <section class="final-cta">
-      <img src="https://www.figma.com/api/mcp/asset/1232377c-a2c8-4f73-985e-432a58a7cb9e" alt="">
-      <div>
-        <h2>Je suis prêt pour un entretien.</h2>
-        <p>Un échange pour parler acquisition B2B, marketing digital et alternance.</p>
-        <a class="pill primary" href="contact.html">Me contacter</a>
+    <section class="home-section contact-section motion-block" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <div>
+          <span>Contact</span>
+          <h2 id="contact-title">Parlons acquisition, alternance ou mission.</h2>
+          <p>Je suis ouvert aux opportunités professionnelles, collaborations freelance, projets e-commerce et missions marketing digital.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="pill primary" href="mailto:bakadir.yacin@gmail.com">bakadir.yacin@gmail.com</a>
+          <a class="pill ghost" href="cv.html">Voir mon CV</a>
+        </div>
       </div>
+    </section>
+
+    <section class="home-cta motion-block">
+      <h2>Besoin d'un profil qui sait produire, tester et apprendre vite ?</h2>
+      <p>Envoyez-moi un message. Je vous réponds avec une proposition claire: ce que je peux apporter, comment je peux aider et par où commencer.</p>
+      <a class="pill primary" href="contact.html">Collaborer avec Yacin</a>
     </section>
   </main>
 
   <footer>
     <strong>Yacin Bakadir</strong>
     <div>
-      <a href="contact.html">Contact</a>
       <a href="portfolio.html">Portfolio</a>
-      <a href="cv.html">CV</a>
+      <a href="use-cases.html">Use cases</a>
+      <a href="contact.html">Contact</a>
     </div>
   </footer>
 
