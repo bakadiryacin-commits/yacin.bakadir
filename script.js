@@ -73,3 +73,13 @@ document.querySelectorAll(".skill-card, .case-tile, .work-card, .feature-card, .
     card.style.transform = "";
   });
 });
+
+const floatingLayer = document.querySelector(".floating-symbols");
+
+if (floatingLayer) {
+  window.addEventListener("pointermove", (event) => {
+    const x = (event.clientX / window.innerWidth - 0.5) * 18;
+    const y = (event.clientY / window.innerHeight - 0.5) * 18;
+    floatingLayer.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+  }, { passive: true });
+}
