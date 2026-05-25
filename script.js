@@ -1,3 +1,18 @@
+const themeToggle = document.querySelector("[data-theme-toggle]");
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme) {
+  document.body.dataset.theme = savedTheme;
+}
+
+themeToggle?.addEventListener("click", () => {
+  const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+  const currentTheme = document.body.dataset.theme || (systemPrefersLight ? "light" : "dark");
+  const nextTheme = currentTheme === "light" ? "dark" : "light";
+  document.body.dataset.theme = nextTheme;
+  localStorage.setItem("theme", nextTheme);
+});
+
 const counters = document.querySelectorAll("[data-count]");
 
 const animateCounter = (entry) => {
@@ -30,7 +45,7 @@ const observer = new IntersectionObserver((entries, obs) => {
 counters.forEach((counter) => observer.observe(counter));
 
 const revealTargets = document.querySelectorAll(
-  ".motion-block, .proof article, .work-card, .posts article, .project-row, .project-feature, .case-tile, .case-study article, .case-meta, .image-slot, .resume-card"
+  ".motion-block, .proof article, .work-card, .posts article, .project-row, .project-feature, .case-tile, .case-study article, .case-meta, .image-slot, .resume-card, .feature-card, .advantage-grid article, .case-preview-card, .blog-preview-list a, .testimonial-grid article"
 );
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -46,7 +61,7 @@ revealTargets.forEach((target, index) => {
   revealObserver.observe(target);
 });
 
-document.querySelectorAll(".skill-card, .case-tile, .work-card").forEach((card) => {
+document.querySelectorAll(".skill-card, .case-tile, .work-card, .feature-card, .case-preview-card").forEach((card) => {
   card.addEventListener("pointermove", (event) => {
     const rect = card.getBoundingClientRect();
     const x = (event.clientX - rect.left) / rect.width - 0.5;
