@@ -1,0 +1,3 @@
+.fatec-hero-visual{position:absolute!important;right:8vw!important;bottom:-75px!important;width:310px!important;height:560px!important}.fatec-card-back,.fatec-card-front{position:absolute!important;inset:0!important;width:100%!important;height:auto!important}.fatec-card-back img,.fatec-card-front img{display:block!important;width:100%!important;height:auto!important}@media(max-width:800px){.fatec-hero-visual{position:relative!important;right:auto!important;bottom:auto!important;width:240px!important;height:430px!important;margin:45px auto -100px!important}}
+.fatec-card-front{transform:rotate(-4deg) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg))!important;transition:transform .35s cubic-bezier(.2,.8,.2,1)!important}
+

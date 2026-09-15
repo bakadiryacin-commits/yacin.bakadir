@@ -1,0 +1,7 @@
+html,body{overflow-x:hidden}.studio-hero,.approach,.services,.case-directory .case-tile,.project-ribbon a,.service-row{transform:perspective(1400px) rotateX(var(--depth-tilt,0deg)) translateY(var(--depth-shift,0));will-change:transform}
+.studio-hero{transform-origin:50% 20%}.case-directory .case-tile{transform:perspective(1100px) rotateX(var(--depth-tilt,0deg)) translateY(var(--depth-shift,0))}
+.studio-hero h1{max-width:1100px;font-size:clamp(48px,6.2vw,88px);line-height:1.01}.hero-bottom p{max-width:560px;font-size:15px}.section h2{max-width:930px;font-size:clamp(32px,4.5vw,64px)}.service-row h3{font-size:clamp(21px,2.2vw,31px)}.case-tile h2{font-size:clamp(22px,2.15vw,31px)}
+.approach>div:first-child,.services,.case-directory .case-tile,.project-ribbon a{transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .3s}.approach h2,.services h2,.contact-banner h2{letter-spacing:-.045em}
+@media(max-width:800px){.studio-hero h1{font-size:clamp(38px,9vw,62px)}.hero-bottom p{font-size:14px}.section h2{font-size:clamp(29px,8.5vw,46px)}.studio-hero,.approach,.services,.case-directory .case-tile,.project-ribbon a,.service-row{transform:none}}
+@media(prefers-reduced-motion:reduce){.studio-hero,.approach,.services,.case-directory .case-tile,.project-ribbon a,.service-row{transform:none!important}}
+

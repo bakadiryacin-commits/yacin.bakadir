@@ -1,0 +1,24 @@
+:root{--red:#3779ff}
+h2>span,.red-dot,.about-hero h1>span,.hero-eyebrow>span,.service-row b,.case-study span,.signup-chip strong,.resume-card>span{color:var(--red)}
+.site-header nav a:last-child,.action:hover,.pill:hover,.case-cover b,.contact-banner .action{background:var(--red)}
+.case-directory{gap:28px}
+.case-tile{position:relative;padding:0 0 28px;background:linear-gradient(150deg,#17191f,#0f1013);border:1px solid #292d36;border-radius:8px;overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.case-tile:hover{transform:translateY(-8px);border-color:var(--red);box-shadow:0 20px 55px #0009}
+.case-tile h2,.case-tile p,.case-tile>span{margin-left:26px;margin-right:26px}
+.case-tile h2{margin-top:17px;margin-bottom:12px;font-size:clamp(23px,2.35vw,34px)}
+.case-tile p{margin-bottom:0}
+.case-tile>span{display:inline-block;margin-top:22px;color:#c4c9d3;font-weight:700;letter-spacing:.08em}
+.case-cover{margin:0;border-radius:0;background:#101216}
+.case-cover:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 52%,#06070aaa);pointer-events:none}
+.case-cover img{aspect-ratio:1.62;transition:transform .6s cubic-bezier(.2,.8,.2,1),filter .4s}
+.case-tile:hover .case-cover img{transform:scale(1.06);filter:saturate(1.12) contrast(1.04)}
+.case-cover b{right:20px;bottom:18px;width:48px;height:48px;border-radius:50%;z-index:1;transition:transform .3s}
+.case-tile:hover .case-cover b{transform:rotate(45deg)}
+.article-list article{padding:32px 28px 30px;background:#14161b;border:1px solid #292d36;border-top:3px solid var(--red);border-radius:7px;transition:transform .3s,border-color .3s}
+.article-list article:hover{transform:translateY(-6px);border-color:var(--red)}
+.read-link{color:#fff;text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:5px}
+.project-ribbon a:after{content:"";position:absolute;inset:auto 0 0;height:52%;background:linear-gradient(transparent,#07080bd9);pointer-events:none}
+.project-ribbon span{z-index:1}
+.service-row:hover{background:#141a27;border-color:var(--red);padding-inline:18px}
+@media(max-width:800px){.case-tile h2,.case-tile p,.case-tile>span{margin-left:20px;margin-right:20px}.case-tile{padding-bottom:22px}.article-list article{padding:26px 21px}.service-row:hover{padding-inline:0}}
+
