@@ -76,6 +76,28 @@ main,.section{min-width:0}h1,h2,h3,p,a{overflow-wrap:break-word}
  .contact-hero .pill{font-size:12px;padding:14px}.about-hero img{height:400px}
 }
 @media(max-height:740px) and (max-width:800px){.wide-case-stack .case-tile{position:relative!important;top:auto!important}}
+/* Motion polish: measured depth instead of abrupt scroll effects. */
+@media (prefers-reduced-motion:no-preference){
+ html{scroll-behavior:smooth}
+ .studio-hero .hero-image{animation:hero-settle 2.4s cubic-bezier(.16,1,.3,1) both}
+ .hero-content{animation:hero-content-in .9s cubic-bezier(.16,1,.3,1) .08s both}
+ .project-ribbon a{transition:transform .7s cubic-bezier(.16,1,.3,1),filter .7s cubic-bezier(.16,1,.3,1),box-shadow .7s cubic-bezier(.16,1,.3,1)}
+ .project-ribbon a:hover{transform:translateY(-5px);filter:brightness(1.06);box-shadow:0 20px 38px #0005}
+ .wide-case-stack .case-tile{transition:border-color .65s cubic-bezier(.16,1,.3,1),box-shadow .65s cubic-bezier(.16,1,.3,1),background .65s cubic-bezier(.16,1,.3,1)!important;will-change:box-shadow}
+ .wide-case-stack .case-tile:focus-within,.wide-case-stack .case-tile:hover{border-color:#77859a!important;box-shadow:0 28px 80px #0008!important;background:#121721!important}
+ .wide-case-stack .case-cover img{transition:transform .9s cubic-bezier(.16,1,.3,1),filter .9s cubic-bezier(.16,1,.3,1)}
+ .wide-case-stack .case-tile:hover .case-cover img{transform:scale(1.035);filter:saturate(1.08) contrast(1.03)}
+ .wide-case-stack .case-see{transition:background .45s cubic-bezier(.16,1,.3,1),color .45s cubic-bezier(.16,1,.3,1),transform .45s cubic-bezier(.16,1,.3,1),border-color .45s cubic-bezier(.16,1,.3,1)!important}
+ .trust-tooltip{transition:opacity .32s ease,transform .45s cubic-bezier(.16,1,.3,1)}
+ .trust-strip .brand-row{animation-timing-function:linear}
+}
+@keyframes hero-content-in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:no-preference) and (min-width:801px){
+ @supports (animation-timeline:view()){
+  .wide-case-stack .case-tile{animation:stack-arrival both;animation-timeline:view();animation-range:entry 0% entry 62%}
+  @keyframes stack-arrival{from{opacity:.72;filter:blur(1px);transform:translateY(28px) scale(.978)}to{opacity:1;filter:blur(0);transform:translateY(0) scale(1)}}
+ }
+}
 @media(prefers-reduced-motion:reduce){
  html{scroll-behavior:auto!important}.trust-strip .brand-row{animation:none!important;flex-wrap:wrap!important;width:100%!important;justify-content:center!important}
  .trust-logo[aria-hidden]{display:none}.trust-pause{display:none}.trust-viewport{padding-bottom:75px}
