@@ -76,6 +76,9 @@ main,.section{min-width:0}h1,h2,h3,p,a{overflow-wrap:break-word}
  .contact-hero .pill{font-size:12px;padding:14px}.about-hero img{height:400px}
 }
 @media(max-height:740px) and (max-width:800px){.wide-case-stack .case-tile{position:relative!important;top:auto!important}}
+/* Tropical hero: keep the editorial block inside the natural sky opening. */
+.studio-hero{align-items:center!important;background:#0b2f35}.studio-hero .hero-image{filter:brightness(.82) saturate(.82)!important;object-position:center center!important}.studio-hero .hero-shade{background:linear-gradient(180deg,#07131c66 0%,#07131c12 34%,#07131c22 62%,#04111799 100%)!important}.studio-hero .hero-content{padding:132px 3vw 42px!important;transform:translateY(-3vh)!important;text-shadow:0 3px 18px #031016aa;text-align:center!important;display:flex!important;flex-direction:column!important;align-items:center!important}.studio-hero h1{max-width:900px!important;margin-bottom:30px!important;text-align:center!important}.studio-hero .hero-eyebrow{margin-bottom:20px!important;text-align:center!important}.studio-hero .hero-bottom{width:min(100%,1100px)!important;max-width:1100px!important;margin-inline:auto}.studio-hero .hero-bottom p{color:#f5fbff!important;text-shadow:0 2px 12px #031016cc}
+@media(max-width:800px){.studio-hero{align-items:center!important}.studio-hero .hero-content{padding:120px 22px 38px!important;transform:translateY(-1vh)}.studio-hero .hero-image{object-position:52% center!important}.studio-hero h1{margin-bottom:20px!important}.studio-hero .hero-bottom{gap:18px!important}}
 /* Motion polish: measured depth instead of abrupt scroll effects. */
 @media (prefers-reduced-motion:no-preference){
  html{scroll-behavior:smooth}
